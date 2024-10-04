@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  
+  <display-name>Employeemanage</display-name>
+  
+  			<servlet>
+			    <servlet-name>EmployeeController</servlet-name>
+			    <servlet-class>com.employeemanage.controller.EmployeeController</servlet-class>
+			</servlet>
+	
+	
+	<servlet-mapping>
+	    <servlet-name>EmployeeController</servlet-name>
+	    <url-pattern>/employee/*</url-pattern>
+	</servlet-mapping>
+		
+		
+		<welcome-file-list>
+        <welcome-file>/WEB-INF/view/form.jsp</welcome-file> 
+    	</welcome-file-list>
+		
+  
+  
+  
+</web-app>
